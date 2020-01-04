@@ -1,0 +1,12 @@
+title: A Culinary
+logo: /assets/img/logo.png
+description: Cooking till perfect!
+google_analytics: 
+plugins:
+- jekyll-redirect-from
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-feed
+
+
+

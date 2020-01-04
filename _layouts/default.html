@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'sr' }}">
+  <head>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    {% if post.title == "" %}
+      <title> {{site.title | upcase}}  </title>
+    {% else %}    
+      <title> {{page.title | upcase}} - {{site.title | upcase}}  </title>
+    {% endif %}
+           
+    
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>    
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header>
+        <h2><a href="{{ '/' | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h2>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+      
+    </div>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    {% if site.google_analytics %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42249092-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-42249092-1');
+    </script>
+    {% endif %}
+
+    <script data-ad-client="ca-pub-1993925204978426" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display:inline-block;width:728px;height:90px"
+        data-ad-client="ca-pub-1993925204978426"
+        data-ad-slot="4702569650"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    
+  </body>
+</html>
