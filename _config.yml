@@ -1,6 +1,7 @@
 title: A Culinary
 logo: /assets/img/logo.png
 description: Cooking till perfect!
+footer: © A Culinary 2020
 google_analytics: 
 plugins:
 - jekyll-redirect-from
